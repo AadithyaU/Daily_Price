@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="USER DETAILS"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:ems="10"
+        android:textAllCaps="true"
+        android:hint="Name"
+        android:inputType="textCapCharacters|textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/area"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:hint="Area"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_below="@+id/editText2"
+        android:ems="10"
+        android:hint="Postal Address"
+        android:inputType="textMultiLine|textPostalAddress" />
+
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_below="@+id/editText3"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText4"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number|phone" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText5"
+        android:ems="10"
+        android:hint="Alternative Phone Number"
+        android:inputType="number|phone" />
+
+</RelativeLayout>

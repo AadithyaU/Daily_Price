@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidbegin.menuviewpagertutorial"
+    android:versionCode="1"
+    android:versionName="5.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.androidbegin.menuviewpagertutorial.ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Sherlock" >
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- This service and receiver is for push notification -->
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Tobuy"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_tobuy"
+            android:noHistory="true"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.AddEditNotes"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.DatabaseConnector"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.ViewNote"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Frag1act1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Drinks_and_juicesact"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Masala_and_spicesact"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.saltsugarjaggeryact"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Refrigeratedact"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.sanitaryact"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Soapact"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Teaandcoffeeact"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SingleItemViewme"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Frag1act2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag1act2"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Frag3"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frag3"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SingleItemView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Frag1act1"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Frag1act1" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Final"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_final"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.FragmentTab1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_finalactivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.ShoppingCartActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.ShoppingCartHelper"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.ListViewAdapter"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Snacks"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_snacks"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SingleItemView1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_single_item_view1"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Snacks"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value="com.androidbegin.menuviewpagertutorial.Snacks" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Skin_careact"
+            android:label="@string/title_activity_skin_careact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Breakfast"
+            android:label="@string/title_activity_breakfast"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Detergentsact"
+            android:label="@string/title_activity_detergentsact"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.DetergentsItemVIew"
+            android:label="@string/title_activity_detergents_item_view"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Detergentsact"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Detergentsact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Handwash_and_Shampooact"
+            android:label="@string/title_activity_handwash_and__shampooact" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.BreakfastItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Breakfast"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Breakfast" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.DrinksandjuicesItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Drinks_and_juicesact" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Drinks_and_juicesact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.HandwashandshampooItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Handwash_and_Shampooact"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Handwash_and_Shampooact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.MasalaandspicesItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Masala_and_spicesact" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Masala_and_spicesact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.RefrigeratedItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Refrigeratedact" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value="com.androidbegin.menuviewpagertutorial.Refrigeratedact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SaltsugarjaggeryItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.saltsugarjaggeryact"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.saltsugarjaggeryact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SanitaryItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.sanitaryact"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.sanitaryact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SkincareItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Skin_careact"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Skin_careact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SoapItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Soapact"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Soapact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.TeaandcoffeeItemView"
+            android:parentActivityName="com.androidbegin.menuviewpagertutorial.Teaandcoffeeact"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.androidbegin.menuviewpagertutorial.Teaandcoffeeact" />
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.Email"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.FirstView"
+            android:label="@string/title_activity_first_view" >
+        </activity>
+        <activity
+            android:name="com.androidbegin.menuviewpagertutorial.SecondView"
+            android:label="@string/title_activity_second_view" >
+        </activity>
+ 
+    </application>
+
+</manifest>

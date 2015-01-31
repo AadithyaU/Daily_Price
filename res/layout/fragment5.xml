@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_height="match_parent">
+
+     <ImageButton
+        android:id="@+id/frag1imagebutton1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/fragment1_image1_cont_desc"
+        android:src="@drawable/ic_launcher"
+         />   
+	<ImageButton
+        android:id="@+id/frag1imagebutton2"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/fragment1_image2_cont_desc"
+        android:src="@drawable/ic_launcher" />   
+</LinearLayout>

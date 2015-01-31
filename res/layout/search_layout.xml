@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:cursorVisible="true"
+    android:hint="@string/Search"
+    android:imeOptions="actionDone"
+    android:inputType="text" > 
+ 
+</EditText>  
+<!-- 
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="@string/Search"
+    android:hint="@string/Search"
+    android:searchButtonText="@string/Search"
+    android:inputType="text"
+    android:cursorVisible="true"
+    android:imeOptions="actionDone"
+    android:includeInGlobalSearch="true"
+    android:queryAfterZeroResults="true"
+    android:voiceSearchMode="showVoiceSearchButton"
+    android:voicePromptText="@string/Search"> 
+
+</searchable>
+
+-->

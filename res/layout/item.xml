@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="?android:attr/activatedBackgroundIndicator"
+    android:padding="@dimen/activity_vertical_margin" >
+
+    <!--
+         <ImageView 
+	    android:layout_margin="3dp"
+	     android:id="@+id/ImageViewItem"
+		android:layout_height="wrap_content" 
+		android:layout_width="100dip" />
+    -->
+
+    <LinearLayout
+        android:layout_width="133dp"
+        android:layout_height="76dp"
+        android:layout_weight="0.63"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextViewItem"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Product Name"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textViewQuantity"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:text="Quantity:"
+            android:textSize="13dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/SubTotal"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:textSize="13dip" />
+    </LinearLayout>
+ <!-- 
+    <Button
+        android:id="@+id/changeQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:text="Change"
+        android:textSize="13sp" />
+     
+
+    <CheckBox
+        android:id="@+id/CheckBoxSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="5dip"
+        android:clickable="true"
+        android:focusable="false" />
+-->
+</LinearLayout>
